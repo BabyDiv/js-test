@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body class="page coral">
+  <form class="subscription">
+      <input type="text" id="text">
+      <button type="submit" class="submit">Subscribe</button>
+  </form>
+  <p class="paragraph">Don't click on me</p>
+  <button type="submit" class="color-button">Change the colour of the page</button>
+  <div class="news-stats">
+      <button class="heart" type="button"><span class="likes-number">9</span></button>
+  </div>
+  <section class="comment-feed container">
+      <h2>Комментарии</h2>
+      <ol class="comment-list">
+        <li class="user-comment">Хеллоу…</li>
+      </ol>
+      <form method="post" class="comment-form">
+        <div class="comment-inner">
+          <label class="comment-label" for="comment-input">ваш комментарий</label>
+          <input type="text" class="comment-field" value="Почем опиум для народа?" placeholder="Комментарий" required id="comment-input">
+        </div>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+  </section>
+  <div class="tooltip">
+      <span class="tooltip-text"></span>
+      <button class="button close-button" type="button"><span>Закрыть</span></button>
+  </div>
+  <article class="container">
+      <p>Конструкторы лаборатории <button class="tooltip-button" type="button" data-tooltip-text="так себе лаборатория">
+      Mice.inc</button> заверили, что их мыши не могут быть переносчиками опасных вирусов, так как это не заложено в их программу. 
+      <button class="tooltip-button" type="button" data-tooltip-text="но это не точно, - прим. юриста">
+      Возможно</button>, истинная причина в том, что мыши лаборатории не способны переносить вообще ничего.</p>
+  </article>
+<script src="./index.js"></script>
+<script src="./likes.js"></script>
+<script src="tooltip.js"></script>
+<script src="./comments.js"></script>      
+</body>
+</html>
