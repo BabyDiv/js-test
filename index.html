@@ -16,7 +16,8 @@
   <div class="news-stats">
       <button class="heart" type="button"><span class="likes-number">9</span></button>
   </div>
-  <section class="comment-feed container">
+
+  <!-- <section class="comment-feed container">
       <h2>Комментарии</h2>
       <ol class="comment-list">
         <li class="user-comment">Хеллоу…</li>
@@ -28,7 +29,8 @@
         </div>
         <button class="button" type="submit">Отправить</button>
       </form>
-  </section>
+  </section> -->
+
   <div class="tooltip">
       <span class="tooltip-text"></span>
       <button class="button close-button" type="button"><span>Закрыть</span></button>
@@ -39,6 +41,24 @@
       <button class="tooltip-button" type="button" data-tooltip-text="но это не точно, - прим. юриста">
       Возможно</button>, истинная причина в том, что мыши лаборатории не способны переносить вообще ничего.</p>
   </article>
+
+  <section class="comment-feed container">
+    <h2>Комментарии</h2>
+    <ol class="comment-list">
+      <li class="user-comment">Вы не готовы все! Я на вас сейчас всех смотрю - вы не готовы! 
+        Сборище дрищей. А че мы делать-то будем, когда замес начнется?<br>
+        Кощей<br>
+      </li>
+    </ol>
+    <form method="post" class="comment-form">
+      <div class="comment-inner">
+        <label class="comment-label" for="comment-textarea">ваш комментарий</label>
+        <textarea class="comment-field comment-area" rows="3" placeholder="Комментарий" required id="comment-textarea"></textarea>
+      </div>
+      <span class="text-counter">Использовано <output class="char-counter" for="comment-textarea">0</output>/142 символов</span>
+      <button class="button submit-button" type="submit">Отправить</button>
+    </form>
+  </section>
 <script src="./index.js"></script>
 <script src="./likes.js"></script>
 <script src="tooltip.js"></script>
