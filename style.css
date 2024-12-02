@@ -158,3 +158,41 @@ p {
   vertical-align: middle;
   transform: rotate(-90deg);
 }
+
+.comment-area {
+  height: unset;
+  resize: none;
+  margin-bottom: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  line-height: 24px;
+}
+
+.text-counter {
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 7px 0;
+  margin-right: auto;
+}
+
+.comment-form.warning .comment-label {
+  color: #f05b29;
+}
+
+.comment-form.warning .comment-area {
+  color: #f05b29;
+  border-color: #f05b29;
+}
+
+.comment-form.warning .comment-area:focus {
+  outline-color: #f05b29;
+}
+
+.comment-form.warning .char-counter {
+  color: #f05b29;
+  font-weight: bold;
+}
+
+.submit-button:disabled {
+  opacity: 0.25;
+}
